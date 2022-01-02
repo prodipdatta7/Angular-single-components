@@ -1,0 +1,54 @@
+::ng-deep .default {
+    .mat-select-arrow {
+        opacity: 0;
+    }
+    .mat-select-arrow-wrapper {
+        width: 0px !important;
+    }
+    .mat-form-field-wrapper {
+        width: 178px !important;
+        max-width: 178px !important;
+        min-width: 178px !important;
+    }
+    .mat-form-field-prefix {
+        font-size: 14px !important;
+    }
+    .mat-form-field-infix {
+        width: 106px !important;
+        height: 48px !important;
+        padding-top: 6px !important;
+    }
+    .mat-select-value-text {
+        padding-left: 12px !important;
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.25px;
+        color: #54545d;
+        // color: #969300;
+    }
+}
+
+::ng-deep .mat-text {
+    height: 48px !important;
+    :after {
+        content: "";
+        width: 100%;
+        border-bottom: 0.1px solid rgba(0, 0, 0, 0.08) !important;
+        position: absolute !important;
+        left: 0 !important;
+        z-index: 1000 !important;
+    }
+    .mat-option-text {
+        font-size: 14px !important;
+        color: #54545d;
+    }
+    
+}
+
+::ng-deep .thisPanelClass {
+    margin-top: -12px !important;
+    margin-left: -18px !important;
+    min-width: calc(100% + 68px) !important;
+}

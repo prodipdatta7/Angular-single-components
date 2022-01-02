@@ -1,0 +1,11 @@
+<div>
+    <div fxLayout="row" fxLayoutAlign="space-between start">
+        <mat-form-field id="view-option" appearance="outline" class="option-selector default">
+            <mat-icon matPrefix>sort</mat-icon>
+            <mat-select disableRipple disableOptionCentering panelClass="thisPanelClass" [(value)]="selected" color="primary">
+                <mat-option class="mat-text" *ngFor="let date of dates" value={{date.value}}>{{date.text | translate}}</mat-option>
+            </mat-select>
+            <mat-icon matSuffix color="primary">keyboard_arrow_down</mat-icon>
+        </mat-form-field>
+    </div>
+</div>
